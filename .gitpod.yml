@@ -1,4 +1,4 @@
-image: drud/ddev-gitpod-base:20211028_fix_gitpod_setup
+image: drud/ddev-gitpod-base:20211028_new_host_docker_internal_detection
 
 tasks:
   - name: ddev
@@ -40,7 +40,15 @@ tasks:
 
 vscode:
   extensions:
+    # Go extension
     - golang.go
+
+    # PHP extension
+    - felixfbecker.php-debug
+
+    # Bash extensions
+    - timonwong.shellcheck
+    - rogalmic.bash-debug
 
 github:
   prebuilds:
